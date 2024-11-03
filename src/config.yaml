@@ -1,5 +1,5 @@
 site:
-  name: ICML MFM-EAI Workshop
+  name: 'OASIS'
   site: 'https://icml-mfm-eai.github.io'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: ICML MFM-EAI Workshop
-    template: '%s — ICML MFM-EAI Workshop'
-  description: "ICML MFM-EAI Workshop"
+    default: 'OASIS: Open Agents Social Interaction Simulations on a Large Scale'
+    template: '%s — OASIS: Open Agents Social Interaction Simulations on a Large Scale'
+  description: "OASIS: Open Agents Social Interaction Simulations on a Large Scale"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: ICML MFM-EAI Workshop
+    site_name: 'OASIS: Open Agents Social Interaction Simulations on a Large Scale'
     images:
       - url: '~/assets/images/default.png'
         width: 1200

@@ -1,0 +1,27 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  isDark?: boolean;
+  containerClass?: string;
+  gap?: string; // 间距，可设置为 `mt-8`, `mb-4` 等
+}
+
+const { title, subtitle, tagline, isDark = false, containerClass = '', gap = 'mb-8' } = Astro.props;
+---
+
+<div class={`py-8 px-4 ${gap} ${isDark ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} ${containerClass}`}>
+  {title || subtitle || tagline ? (
+    <div class="max-w-xl mx-auto text-center mb-6">
+      {tagline && <p class="text-sm font-semibold text-gray-500 uppercase mb-2">{tagline}</p>}
+      {title && <h2 class="text-3xl md:text-4xl font-bold mb-4">{title}</h2>}
+      {subtitle && <p class="text-xl text-gray-600 dark:text-gray-400">{subtitle}</p>}
+    </div>
+  ) : null}
+  
+  <!-- 内容插槽 -->
+  <div class="mx-auto max-w-5xl">
+    <slot />
+  </div>
+</div>

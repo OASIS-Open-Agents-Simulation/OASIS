@@ -6,30 +6,22 @@ export const headerData = {
       text: 'Overview',
       href: getPermalink('/#Overview'),
     },
-    {
-      text: 'Call for Papers',
-      href: getPermalink('/#Call-For-Papers'),
-    },
-    {
-      text:'Speakers',
-      href:getPermalink('/#Speakers')
-    },
     // {
-    //   text: 'Challenges',
-    //   href: getPermalink('/#Challenges'),
+    //   text: 'Call for Papers',
+    //   href: getPermalink('/#Call-For-Papers'),
     // },
-    {
-      text: 'People',
-      href: getPermalink('/#Organizers'),
-    },
-    {
-      text:'Challenge',
-      href:'https://chenyi99.github.io/ego_plan_challenge/'
-    }
     // {
-    //   text: 'Steering Committee',
-    //   href: getPermalink('/#Steering-Committee'),
+    //   text:'Speakers',
+    //   href:getPermalink('/#Speakers')
     // },
+    // {
+    //   text: 'People',
+    //   href: getPermalink('/#Organizers'),
+    // },
+    // {
+    //   text:'Challenge',
+    //   href:'https://chenyi99.github.io/ego_plan_challenge/'
+    // }
   ],
 };
 

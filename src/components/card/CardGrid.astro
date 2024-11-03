@@ -1,0 +1,30 @@
+---
+// 引入 Card 组件
+import Card from './Card.astro';
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <Card
+    icon="/card/card1.png"
+    title="Colab Tutorials"
+    description="A step-by-step guide to help you get started with ManiSkill. Try it now!"
+    linkText="Quick Start"
+    linkUrl="#"
+  />
+
+  <Card
+    icon="/card/card2.png"
+    title="Baselines"
+    description="We provide tuned Reinforcement Learning and Imitation Learning baselines (e.g. PPO, TD-MPC2, Diffusion Policy)"
+    linkText="Learn More"
+    linkUrl="#"
+  />
+
+  <Card
+    icon="/card/card3.png"
+    title="Documentation"
+    description="We provide documentation on all aspects of ManiSkill for your reference. Documentation further includes guides such as how to use ManiSkill for RL workflows and how to make custom robotics environments."
+    linkText="Learn More"
+    linkUrl="#"
+  />
+</div>

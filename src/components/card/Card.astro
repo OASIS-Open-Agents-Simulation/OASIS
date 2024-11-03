@@ -1,0 +1,31 @@
+---
+export interface Props {
+  icon: string; // 图标路径
+  title: string;
+  description: string;
+  linkText: string;
+  linkUrl: string;
+}
+
+const { icon, title, description, linkText, linkUrl } = Astro.props;
+---
+
+<div
+  class="bg-gray-100 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-200 min-h-[600px] flex flex-col justify-between"
+>
+  <div>
+    <img src={icon} alt={title} class="w-auto h-auto max-w-[100px] max-h-[100px] mx-auto mb-4 object-contain" />
+    <!-- 标题 -->
+    <h3 class="text-lg font-bold text-gray-900 mb-2">{title}</h3>
+  </div>
+  <!-- 图标 -->
+
+  <!-- 描述 -->
+  <p class="text-gray-600 mb-4">{description}</p>
+
+  <!-- 链接 -->
+  <a href={linkUrl} target="_blank" class="text-blue-600 font-semibold hover:underline">
+    {linkText}
+    <span aria-hidden="true">↗</span>
+  </a>
+</div>
