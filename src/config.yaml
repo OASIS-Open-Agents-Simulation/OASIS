@@ -1,6 +1,6 @@
 site:
   name: 'OASIS'
-  site: 'https://icml-mfm-eai.github.io'
+  site: 'https://dengzhanxixin.github.io/OASIS/'
   base: '/'
   trailingSlash: false
 
