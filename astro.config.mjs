@@ -23,6 +23,7 @@ const whenExternalScripts = (items = []) =>
 export default defineConfig({
   output: 'static',
 
+  
   integrations: [
     tailwind({
       applyBaseStyles: false,
