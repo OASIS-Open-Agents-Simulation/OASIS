@@ -79,6 +79,7 @@ export default defineConfig({
 
   vite: {
     resolve: {
+      base: '/OASIS/',
       alias: {
         '~': path.resolve(__dirname, './src'),
       },
