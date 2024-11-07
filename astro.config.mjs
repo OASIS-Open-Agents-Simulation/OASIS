@@ -22,7 +22,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-
+  site: 'https://dengzhanxixin.github.io/OASIS/', // 站点完整 URL
   integrations: [
     tailwind({
       applyBaseStyles: false,
